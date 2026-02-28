@@ -1,179 +1,75 @@
-# UX Designer Skills
+# bencium-claude-code-design-skill
 
-Two Claude Code skills for UI/UX design guidance — choose based on your project needs.
-
-## Why Two Variants?
-
-| Aspect | Controlled | Innovative |
-|--------|------------|------------|
-| **Decision Authority** | Asks before making choices | Commits boldly to directions |
-| **Aesthetic Philosophy** | Flat, minimal, no shadows | Shadows, gradients, textures allowed |
-| **Typography** | 2-3 typefaces, mathematical scales | Experimental, characterful choices |
-| **Structure** | 6 files (~3,500 lines) | 6 files (~1,000 lines) |
-| **Best For** | Production, enterprise, regulated | Landing pages, portfolios, campaigns |
-
-## Skill Variants
-
-### bencium-controlled-ux-designer
-
-**Systematic design for production work.**
-
-Best for:
-- Enterprise applications
-- Healthcare/regulated industries
-- Long-term maintainable projects
-- Design systems requiring consistency
-- Accessibility-critical interfaces
-
-Key behaviors:
-- **Always asks** before making design decisions
-- WCAG 2.1 AA compliance (non-negotiable)
-- Mathematical spacing/typography scales
-- Flat, minimal aesthetic (no shadows, gradients, glass)
-- Comprehensive validation checklists
-
-```
-bencium-controlled-ux-designer/
-├── SKILL.md                  # Main skill (~740 lines)
-├── ACCESSIBILITY.md          # Full WCAG guidance (~830 lines)
-├── RESPONSIVE-DESIGN.md      # Breakpoints & patterns (~600 lines)
-├── DESIGN-SYSTEM-TEMPLATE.md # Project kickoff framework
-├── MOTION-SPEC.md            # Animation specifications
-└── README.md
-```
-
-### bencium-innovative-ux-designer
-
-**Bold design for creative exploration.**
-
-Inspired by [Anthropic's Frontend Aesthetics Cookbook](https://github.com/anthropics/claude-cookbooks/blob/main/coding/prompting_for_frontend_aesthetics.ipynb).
-
-Best for:
-- Landing pages and marketing sites
-- Creative agency projects
-- Prototypes and concept exploration
-- Portfolio pieces
-- Short-term campaigns
-
-Key behaviors:
-- **Commits boldly** to aesthetic directions (doesn't ask)
-- Asks Design Thinking questions upfront, then executes
-- Shadows, gradients, textures allowed when intentional
-- Typography experimentation encouraged
-- Accessibility as baseline (not blocking exploration)
-
-```
-bencium-innovative-ux-designer/
-├── SKILL.md                  # Main skill (~700 lines)
-├── ACCESSIBILITY.md          # Compressed essentials (~110 lines)
-├── RESPONSIVE-DESIGN.md      # Mobile-first basics (~90 lines)
-├── MOTION-SPEC.md            # Animation essentials (~70 lines)
-└── README.md
-```
-
-## Anti-Patterns (Both Variants Avoid)
-
-Both skills are designed to avoid "AI slop" — the generic, forgettable aesthetics that flood AI-generated interfaces:
-
-**Fonts to avoid:**
-- Inter, Roboto, Arial as primary typefaces
-- Space Grotesk (overused by AI tools)
-- System fonts without intention
-
-**Colors to avoid:**
-- Generic SaaS blue (`#3B82F6`)
-- Purple gradients on white backgrounds
-- Teal + coral combinations
-
-**Patterns to avoid:**
-- Liquid glass / glassmorphism everywhere
-- Apple mimicry without purpose
-- Cookie-cutter SaaS layouts
-- Predictable component arrangements
-
-## Aesthetic Tone Options (Innovative Variant)
-
-The innovative variant can execute across different aesthetic directions:
-
-| Tone | Characteristics |
-|------|-----------------|
-| Brutally minimal | Maximum whitespace, single accent, stark typography |
-| Maximalist chaos | Dense information, layered elements, controlled overwhelm |
-| Retro-futuristic | Nostalgic tech aesthetics, CRT glow, pixel elements |
-| Organic/natural | Earthy palettes, hand-drawn elements, asymmetry |
-| Luxury/refined | Restrained elegance, premium materials, subtle animation |
-| Editorial/magazine | Strong typography hierarchy, dramatic layouts |
-| Brutalist/raw | Exposed structure, system fonts as statement, anti-design |
-| Soft/pastel | Gentle gradients, rounded forms, approachable |
+A Claude Code plugin marketplace with 11 skills for design, architecture, and productivity by [bencium.io](https://bencium.io).
 
 ## Installation
 
-Copy the desired skill folder to your Claude Code skills directory:
+### Claude Code (CLI)
+
+Add the marketplace, then install individual plugins:
 
 ```bash
-# For controlled/production workflow
-cp -r bencium-controlled-ux-designer ~/.claude/skills/
+# Add marketplace
+/plugin marketplace add bencium/bencium-claude-code-design-skill
 
-# For creative/innovative workflow
-cp -r bencium-innovative-ux-designer ~/.claude/skills/
+# Install any plugin
+/plugin install bencium-controlled-ux-designer@bencium-claude-code-design-skill
 ```
 
-## Example Interactions
+### Claude.ai Cowork App
 
-### Controlled Variant
+These skills work as SKILL.md files in the Claude Cowork app. Copy the `skills/` directory from any plugin into your project's `.claude/skills/` folder.
 
-**You:** "I need a call-to-action button for the hero section"
+### Other Coding Tools
 
-**Claude:** "Before I implement this button, I have design questions:
-1. What's the primary action you want to emphasize?
-2. Do you have brand colors in mind, or should I suggest options?
-3. What emotion should this button convey? (urgent, calm, professional)
+The SKILL.md format is compatible with 40+ AI coding tools that support markdown-based skill files, including OpenAI Codex, Gemini CLI, Cursor, Windsurf, and others. Copy the skill files into the tool's prompt or context directory.
 
-I can suggest 3 unique color directions that break from typical patterns..."
+---
 
-### Innovative Variant
+## Plugins
 
-**You:** "I need a call-to-action button for the hero section"
+### Design (6 plugins)
 
-**Claude:** "What's the overall vibe for this project? Options:
-- Brutally minimal
-- Bold and playful
-- Luxury/refined
-- Something else?
+| Plugin | Description |
+|--------|-------------|
+| **bencium-controlled-ux-designer** | Systematic UX design for production. WCAG 2.1 AA, mathematical scales, always-ask-first protocol. Best for enterprise and regulated industries. |
+| **bencium-innovative-ux-designer** | Bold creative UX that commits to distinctive directions. Shadows, gradients, experimental typography. Best for landing pages and campaigns. |
+| **bencium-impact-designer** | Production-grade frontend interfaces that avoid generic AI aesthetics. Based on Anthropic's Frontend Designer Skill. |
+| **design-audit** | Systematic visual UI/UX audits producing phased, implementation-ready design plans. Purely visual -- does not touch functionality. |
+| **typography** | Professional typography rules enforcing correct quote marks, dashes, spacing, hierarchy. Auto-applies to generated HTML/CSS/React code. |
+| **relationship-design** | AI-first interfaces that build ongoing relationships through memory, trust evolution, and collaborative planning. |
 
-Once I know the direction, I'll commit to a distinctive button design that avoids generic SaaS patterns."
+### Productivity (3 plugins)
 
-**You:** "Bold and playful"
+| Plugin | Description |
+|--------|-------------|
+| **adaptive-communication** | Detects user communication style (high-context relational vs low-context transactional) and adapts responses. |
+| **negentropy-lens** | Decision-support framework evaluating systems through entropy (decay) vs negentropy (growth), surfacing tacit knowledge gaps. |
+| **bencium-aeo** | Answer Engine Optimization for AI search visibility. Optimize content for ChatGPT, Claude, Gemini, AI Overviews citations. |
 
-**Claude:** *Implements a distinctive button with intentional design choices, no further questions*
+### Development (2 plugins)
 
-## Key Differences Summary
+| Plugin | Description |
+|--------|-------------|
+| **bencium-code-conventions** | Code style and tech stack conventions for React/Next.js/TypeScript, TailwindCSS, Supabase projects. |
+| **renaissance-architecture** | Software architecture principles for building genuinely new solutions through first-principles thinking, not derivative work. |
 
-| Scenario | Controlled | Innovative |
-|----------|------------|------------|
-| Color choice | "Here are 3 options. Which do you prefer?" | "I'm using [X] because it fits the playful tone" |
-| Shadow usage | "No shadows per design system" | "Adding subtle shadow for depth and hierarchy" |
-| Typography | "Using Inter for readability" | "Using [characterful font] to stand out" |
-| Layout | "Following established grid patterns" | "Breaking grid intentionally for visual interest" |
+---
 
-## Version History
+## Plugin Structure
 
-- **v2.0.0** (2025-11-22): Split into two variants
-  - Created `bencium-controlled-ux-designer` (production focus)
-  - Created `bencium-innovative-ux-designer` (creative focus)
-  - Innovative variant inspired by Anthropic's Frontend Aesthetics Cookbook
-  - Compressed supporting files for innovative variant (~70% reduction)
-  - Added Design Thinking Protocol to innovative variant
-  - Added aesthetic tone options
+Each plugin follows the standard Claude Code plugin format:
 
-- **v1.1.0** (2025-11-20): Comprehensive design system enhancement
-- **v1.0.0** (2025-10-18): Initial release
-
-## References
-
-- [Anthropic Frontend Aesthetics Cookbook](https://github.com/anthropics/claude-cookbooks/blob/main/coding/prompting_for_frontend_aesthetics.ipynb)
-- [Claude Code Skills Documentation](https://docs.anthropic.com/claude-code/skills)
+```
+plugin-name/
+  .claude-plugin/
+    plugin.json
+  skills/
+    skill-name/
+      SKILL.md
+      [reference files]
+```
 
 ## License
 
-Personal skills - use and modify as needed for your projects.
+MIT

@@ -1,0 +1,7 @@
+{
+  "name": "bencium-impact-designer",
+  "version": "1.2.0",
+  "description": "Production-grade frontend interfaces that avoid generic AI aesthetics. Based on Anthropic's Frontend Designer Skill with bold creative commitment.",
+  "author": { "name": "bencium.io", "url": "https://bencium.io" },
+  "keywords": ["frontend", "design", "ui", "creative"]
+}

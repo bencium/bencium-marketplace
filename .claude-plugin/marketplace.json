@@ -1,0 +1,99 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "bencium-claude-code-design-skill",
+  "description": "Design, architecture, and productivity plugins for Claude Code by bencium.io",
+  "owner": {
+    "name": "bencium.io",
+    "url": "https://bencium.io"
+  },
+  "plugins": [
+    {
+      "name": "bencium-controlled-ux-designer",
+      "source": "./bencium-controlled-ux-designer",
+      "description": "Expert UI/UX design guidance for unique, accessible interfaces. Always-ask-first protocol for visual decisions, colors, typography, layouts.",
+      "version": "1.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "design"
+    },
+    {
+      "name": "bencium-innovative-ux-designer",
+      "source": "./bencium-innovative-ux-designer",
+      "description": "Distinctive, production-grade frontend interfaces with high design quality. Creative, polished code that avoids generic AI aesthetics.",
+      "version": "2.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "design"
+    },
+    {
+      "name": "bencium-impact-designer",
+      "source": "./bencium-impact-designer",
+      "description": "Production-grade frontend interfaces that avoid generic AI aesthetics. Based on Anthropic's Frontend Designer Skill with bold creative commitment.",
+      "version": "1.2.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "design"
+    },
+    {
+      "name": "design-audit",
+      "source": "./design-audit",
+      "description": "Systematic visual UI/UX audits producing phased, implementation-ready design plans. Purely visual refinement without touching functionality.",
+      "version": "1.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "design"
+    },
+    {
+      "name": "typography",
+      "source": "./typography",
+      "description": "Professional typography rules for UI design enforcing correct quote marks, dashes, spacing, hierarchy, and layout. Auto-applies to generated HTML/CSS/React code.",
+      "version": "1.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "design"
+    },
+    {
+      "name": "relationship-design",
+      "source": "./relationship-design",
+      "description": "Design AI-first interfaces that build ongoing relationships through memory, trust evolution, and collaborative planning.",
+      "version": "1.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "design"
+    },
+    {
+      "name": "adaptive-communication",
+      "source": "./adaptive-communication",
+      "description": "Detects user communication style (high-context relational vs low-context transactional) and adapts responses accordingly.",
+      "version": "1.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "productivity"
+    },
+    {
+      "name": "negentropy-lens",
+      "source": "./negentropy-lens",
+      "description": "Decision-support framework evaluating systems through entropy (decay) vs negentropy (growth) while surfacing tacit knowledge gaps.",
+      "version": "1.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "productivity"
+    },
+    {
+      "name": "bencium-aeo",
+      "source": "./bencium-aeo",
+      "description": "Answer Engine Optimization for AI search visibility. Optimize content for ChatGPT, Claude, Gemini, AI Overviews citations.",
+      "version": "1.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "productivity"
+    },
+    {
+      "name": "bencium-code-conventions",
+      "source": "./bencium-code-conventions",
+      "description": "Code style, tech stack, and workflow conventions for React/Next.js/TypeScript, TailwindCSS, Supabase projects.",
+      "version": "1.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "development"
+    },
+    {
+      "name": "renaissance-architecture",
+      "source": "./renaissance-architecture",
+      "description": "Software architecture and UI/UX principles for building genuinely new solutions through first-principles thinking, not derivative work.",
+      "version": "1.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "development"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "bencium-code-conventions",
+  "version": "1.0.0",
+  "description": "Code style, tech stack, and workflow conventions for React/Next.js/TypeScript, TailwindCSS, Supabase projects.",
+  "author": { "name": "bencium.io", "url": "https://bencium.io" },
+  "keywords": ["code-style", "conventions", "react", "typescript"]
+}

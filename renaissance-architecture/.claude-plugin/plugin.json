@@ -1,0 +1,7 @@
+{
+  "name": "renaissance-architecture",
+  "version": "1.0.0",
+  "description": "Software architecture and UI/UX principles for building genuinely new solutions through first-principles thinking, not derivative work.",
+  "author": { "name": "bencium.io", "url": "https://bencium.io" },
+  "keywords": ["architecture", "first-principles", "software-design"]
+}

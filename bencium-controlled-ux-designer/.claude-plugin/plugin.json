@@ -1,0 +1,10 @@
+{
+  "name": "bencium-controlled-ux-designer",
+  "version": "1.0.0",
+  "description": "Expert UI/UX design guidance for unique, accessible interfaces. Always-ask-first protocol for visual decisions, colors, typography, layouts.",
+  "author": {
+    "name": "bencium.io",
+    "url": "https://bencium.io"
+  },
+  "keywords": ["ux-design", "accessibility", "design-system", "ui"]
+}

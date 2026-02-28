@@ -1,0 +1,7 @@
+{
+  "name": "bencium-aeo",
+  "version": "1.0.0",
+  "description": "Answer Engine Optimization for AI search visibility. Optimize content for ChatGPT, Claude, Gemini, AI Overviews citations.",
+  "author": { "name": "bencium.io", "url": "https://bencium.io" },
+  "keywords": ["aeo", "seo", "ai-search", "content-optimization"]
+}

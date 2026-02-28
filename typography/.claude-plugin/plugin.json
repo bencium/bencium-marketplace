@@ -1,0 +1,7 @@
+{
+  "name": "typography",
+  "version": "1.0.0",
+  "description": "Professional typography rules for UI design enforcing correct quote marks, dashes, spacing, hierarchy, and layout. Auto-applies to generated HTML/CSS/React code.",
+  "author": { "name": "bencium.io", "url": "https://bencium.io" },
+  "keywords": ["typography", "ui-text", "css", "html-entities"]
+}

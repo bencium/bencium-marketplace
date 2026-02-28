@@ -1,0 +1,7 @@
+{
+  "name": "relationship-design",
+  "version": "1.0.0",
+  "description": "Design AI-first interfaces that build ongoing relationships through memory, trust evolution, and collaborative planning.",
+  "author": { "name": "bencium.io", "url": "https://bencium.io" },
+  "keywords": ["agentic-ux", "relationship-design", "trust-evolution", "ai-interfaces"]
+}

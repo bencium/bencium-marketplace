@@ -1,0 +1,7 @@
+{
+  "name": "adaptive-communication",
+  "version": "1.0.0",
+  "description": "Detects user communication style (high-context relational vs low-context transactional) and adapts responses accordingly.",
+  "author": { "name": "bencium.io", "url": "https://bencium.io" },
+  "keywords": ["communication", "ux-writing", "tone-adaptation"]
+}

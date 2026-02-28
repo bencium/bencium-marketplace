@@ -1,0 +1,7 @@
+{
+  "name": "design-audit",
+  "version": "1.0.0",
+  "description": "Systematic visual UI/UX audits producing phased, implementation-ready design plans. Purely visual refinement without touching functionality.",
+  "author": { "name": "bencium.io", "url": "https://bencium.io" },
+  "keywords": ["design-audit", "ui-review", "visual-refinement"]
+}

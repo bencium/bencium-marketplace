@@ -1,0 +1,7 @@
+{
+  "name": "negentropy-lens",
+  "version": "1.0.0",
+  "description": "Decision-support framework evaluating systems through entropy (decay) vs negentropy (growth) while surfacing tacit knowledge gaps.",
+  "author": { "name": "bencium.io", "url": "https://bencium.io" },
+  "keywords": ["decision-framework", "architecture", "strategy"]
+}
