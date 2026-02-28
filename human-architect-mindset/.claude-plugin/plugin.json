@@ -1,0 +1,10 @@
+{
+  "name": "human-architect-mindset",
+  "version": "1.0.0",
+  "description": "Systematic architectural thinking for irreplaceable human capabilities - domain modeling, systems thinking, constraint navigation, and AI-aware problem decomposition.",
+  "author": {
+    "name": "bencium.io",
+    "url": "https://bencium.io"
+  },
+  "keywords": ["architecture", "system-design", "domain-modeling", "problem-decomposition"]
+}

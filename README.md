@@ -1,6 +1,6 @@
 # bencium-marketplace
 
-A Claude Code plugin marketplace with 11 skills for design, architecture, and productivity by [bencium.io](https://bencium.io).
+A Claude Code plugin marketplace with 12 skills for design, architecture, and productivity by [bencium.io](https://bencium.io).
 
 ## Installation
 
@@ -47,12 +47,13 @@ The SKILL.md format is compatible with 40+ AI coding tools that support markdown
 | **negentropy-lens** | Decision-support framework evaluating systems through entropy (decay) vs negentropy (growth), surfacing tacit knowledge gaps. |
 | **bencium-aeo** | Answer Engine Optimization for AI search visibility. Optimize content for ChatGPT, Claude, Gemini, AI Overviews citations. |
 
-### Development (2 plugins)
+### Development (3 plugins)
 
 | Plugin | Description |
 |--------|-------------|
 | **bencium-code-conventions** | Code style and tech stack conventions for React/Next.js/TypeScript, TailwindCSS, Supabase projects. |
 | **renaissance-architecture** | Software architecture principles for building genuinely new solutions through first-principles thinking, not derivative work. |
+| **human-architect-mindset** | Systematic architectural thinking -- domain modeling, systems thinking, constraint navigation, and AI-aware problem decomposition. |
 
 ---
 

@@ -94,6 +94,14 @@
       "version": "1.0.0",
       "author": { "name": "bencium.io", "url": "https://bencium.io" },
       "category": "development"
+    },
+    {
+      "name": "human-architect-mindset",
+      "source": "./human-architect-mindset",
+      "description": "Systematic architectural thinking - domain modeling, systems thinking, constraint navigation, and AI-aware problem decomposition.",
+      "version": "1.0.0",
+      "author": { "name": "bencium.io", "url": "https://bencium.io" },
+      "category": "development"
     }
   ]
 }
