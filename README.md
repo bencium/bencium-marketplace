@@ -71,6 +71,38 @@ plugin-name/
       [reference files]
 ```
 
+## Bonus: Spinner Verbs
+
+64 satirical tech-bro spinner verbs that replace Claude Code's default "Thinking..." messages with phrases like *Enshittifying platforms*, *Rebranding failures as "pivots"*, and *Overcompensating with rocket size*.
+
+### Install
+
+Copy `spinner-verbs.json` contents into your `~/.claude/settings.json`:
+
+```json
+{
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": ["..."]
+  }
+}
+```
+
+Or append to defaults instead of replacing:
+
+```json
+{
+  "spinnerVerbs": {
+    "mode": "append",
+    "verbs": ["..."]
+  }
+}
+```
+
+See [`spinner-verbs.json`](spinner-verbs.json) for the full list.
+
+---
+
 ## License
 
 MIT
