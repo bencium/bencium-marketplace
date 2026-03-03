@@ -1,0 +1,7 @@
+{
+  "name": "vanity-engineering-review",
+  "version": "1.0.0",
+  "description": "Reviews codebases, architectures, PRs, and technical plans for vanity engineering — code built for the developer's ego rather than delivering user or business value.",
+  "author": { "name": "bencium.io", "url": "https://bencium.io" },
+  "keywords": ["code-review", "architecture", "over-engineering", "complexity", "simplification"]
+}
