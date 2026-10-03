@@ -1,7 +1,8 @@
 {
   "name": "emotion-statusline",
-  "version": "1.2.0",
-  "description": "Statusline that shows Claude's classified emotional state (behavioral, Haiku-scored) with a reward-hacking warning on 'desperate'.",
+  "version": "1.3.0",
+  "description": "Statusline and live band that show Claude's classified emotional state (behavioral, Haiku-scored) with a reward-hacking warning on 'desperate'.",
   "author": { "name": "bencium.io", "url": "https://bencium.io" },
-  "keywords": ["statusline", "observability", "hooks", "emotion"]
+  "keywords": ["statusline", "observability", "hooks", "emotion", "mod"],
+  "types": "./types/index.d.ts"
 }

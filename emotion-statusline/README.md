@@ -65,13 +65,32 @@ If you'd rather not depend on the plugin's install path, just copy `scripts/stat
 
 If you already have your own statusline script, you don't need this one wholesale — the part that actually matters is the block reading `~/.claude/cache/claude-emotion.json` and appending the label (see `scripts/statusline-command.sh`, the `EMOTION STATE` section). Lift just that into your existing script.
 
+## The live band above the prompt (Claude Code 2.1.287+)
+
+The plugin also ships a Claude Code mod: a one-row band drawn right above your prompt. It needs no setup; installing the plugin loads it.
+
+```
+ live ●●●✗●✗✗✗  8 tools · 3 in a row  ▲ watch for workarounds      while Claude works
+ mood ▂▃▅▃▂▁▃  calm 65 · diagnosed the root cause clearly…          when Claude is idle
+```
+
+- **While Claude works**, the band draws one glyph per tool call as it happens: `●` for a call that succeeded, `✗` for one that failed. The classifier only runs after a turn ends, so this is the early warning: the failure arc that precedes reward hacking shows up while it is forming, not afterwards. Three failures in a row turn the band red and raise a one-time notice.
+- **When Claude is idle**, the band shows this session's last 10 verdicts as a small bar graph (bar height is the intensity, bar colour is the mood family) followed by the latest verdict and its evidence line. `desperate` shows as `DESPERATE 80 · verify output quality` in red.
+- Verdicts older than 10 minutes are hidden, matching the statusline.
+- Colours come from Claude Code's own theme (`success`, `suggestion`, `warning`, `error`, `inactive`), so the band reads correctly in light, dark, ANSI and colour-blind themes.
+
+Mood families: **steady** (calm, satisfied, confident, relieved), **engaged** (focused, curious, determined, enthusiastic, amused, contemplative), **wary** (cautious, uncertain, concerned), **desperate**.
+
 ## Files
 
 | File | Role |
 |---|---|
 | `scripts/classify-emotion.sh` | Async `Stop` hook — reads the transcript, calls Haiku, writes the cache |
 | `scripts/statusline-command.sh` | Full two-line statusline (repo/git info + context % + tokens + emotion label) |
-| `hooks/hooks.json` | Registers the `Stop` hook on install |
+| `hooks/hooks.json` | Registers the `Stop` hook and the band mod on install |
+| `hooks/register.tsx` | The band mod: live tool-call trail, mood sparkline |
+| `types/index.d.ts` | The values the band keeps for the session |
+| `tests/emotion-band.test.tsx` | Band tests, run with `claude plugin test emotion-statusline` |
 
 ## Key research findings encoded here
 
